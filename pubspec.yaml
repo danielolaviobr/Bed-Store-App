@@ -26,6 +26,7 @@ dependencies:
   flutter_bloc: ^5.0.1
   equatable: ^1.2.0
   meta: ^1.1.8
+  flutter_svg: ^0.18.0
 
 
   # The following adds the Cupertino Icons font to your application.
@@ -67,6 +68,9 @@ flutter:
     - family: Warownia
       fonts:
         - asset: assets/Warownia.ttf
+    - family: SFPro
+      fonts:
+        - asset: assets/SFPro.ttf
   #       - asset: fonts/Schyler-Italic.ttf
   #         style: italic
   #   - family: Trajan Pro

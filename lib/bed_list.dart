@@ -5,6 +5,7 @@ import 'package:bed_store_app/item_view.dart';
 import 'package:bed_store_app/widgets/bed_item.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:flutter_svg/flutter_svg.dart';
 
 class BedList extends StatelessWidget {
   static String id = '/BedList';
@@ -94,6 +95,46 @@ class Header extends StatelessWidget {
             spreadRadius: 5.0,
             // offset: Offset(dx, dy)
           ),
+        ],
+      ),
+      child: Stack(
+        children: [
+          Align(
+            alignment: Alignment.topLeft,
+            child: Padding(
+              padding: const EdgeInsets.only(left: 20.0, top: 40.0),
+              child: SvgPicture.asset(
+                'assets/menu.svg',
+                color: Colors.white,
+                width: 40,
+              ),
+            ),
+          ),
+          Align(
+            alignment: Alignment.topRight,
+            child: Padding(
+              padding: const EdgeInsets.only(right: 20.0, top: 40.0),
+              child: SvgPicture.asset(
+                'assets/cart.svg',
+                color: Colors.white,
+                width: 40,
+              ),
+            ),
+          ),
+          Align(
+            alignment: Alignment.bottomLeft,
+            child: Padding(
+              padding: const EdgeInsets.only(bottom: 30.0, left: 20.0),
+              child: Text(
+                'Discover',
+                style: TextStyle(
+                  fontSize: 45.0,
+                  color: Colors.white,
+                  fontFamily: 'SFPro',
+                ),
+              ),
+            ),
+          )
         ],
       ),
     );
