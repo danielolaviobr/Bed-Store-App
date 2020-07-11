@@ -13,5 +13,9 @@ class BedHeroLoading extends BedHeroState {
 class BedHeroDisplay extends BedHeroState {
   final String image;
   final String tag;
-  const BedHeroDisplay(this.image, this.tag);
+  final String title;
+  final String price;
+  final String description;
+  const BedHeroDisplay(
+      {this.image, this.tag, this.title, this.price, this.description});
 }

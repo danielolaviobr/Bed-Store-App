@@ -9,7 +9,13 @@ class BedHeroBloc extends Bloc<BedHeroEvent, BedHeroState> {
   Stream<BedHeroState> mapEventToState(BedHeroEvent event) async* {
     yield BedHeroLoading();
     if (event is UpdateHero) {
-      yield BedHeroDisplay(event.bed.image, event.bed.tag);
+      yield BedHeroDisplay(
+        image: event.bed.image,
+        tag: event.bed.tag,
+        price: event.bed.price,
+        description: event.bed.description,
+        title: event.bed.title,
+      );
     }
   }
 }
