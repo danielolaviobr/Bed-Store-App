@@ -7,3 +7,5 @@ This is a simple Bed Store App UI, made using the bloc architecture and Hero ani
 <img src="https://i.ibb.co/gmkmQMm/Bed-Store-UI-2.png" height="700">
 
 <img src="https://i.ibb.co/XkMyYjx/Bed-Store-UI.png" height="700">
+
+<img src="https://i.ibb.co/dcP5Z5m/ezgif-5-cf25d8710704.gif" height="700">
